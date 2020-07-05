@@ -1,0 +1,53 @@
+#include<iostream>
+using namespace std;
+
+class customer
+{
+	private:
+		int cust_id;
+		char name[20];
+		double creditlimit;
+		
+	public:
+		void input()
+		{
+			cout<<"Enter customer id "<<endl;
+			cin>>cust_id;
+			
+			
+			cout<<"Enter customer name "<<endl;
+			cin>>name;
+			
+			cout<<"Enter credit limit "<<endl;
+			cin>>creditlimit;		
+		}
+		
+		double simple_interest()
+		{
+			int yr;
+			double si,roi;
+			cout<<"Enter number of years and rate of interest"<<endl;
+			cin>>yr;
+			cin>>roi;
+			si=(creditlimit*yr*roi)/100;
+			cout<<"rate of interest is"<<si<<endl;
+			return si;
+		}
+		
+		void show()
+		{
+			cout<<"Customer id is "<<cust_id<<endl;
+			cout<<"Customer name is "<<name<<endl;
+			cout<<"Customer credit is "<<creditlimit<<endl;
+			cout<<"Interest for credit is "<<simple_interest()<<endl; 
+		}
+};
+
+int main()
+{
+	customer c1;
+	c1.input();
+	c1.show();
+	return 0;
+}
+
