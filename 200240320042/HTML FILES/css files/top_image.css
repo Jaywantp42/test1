@@ -1,0 +1,16 @@
+*
+.container
+{
+	position: relative;
+}
+.textbox
+{
+	position: absolute;
+	bottom: 90px;
+	right: 20px;
+	text-align: center;
+	color: #d4af37;
+	font-size: 20px;
+	padding-left: 20px;
+	padding-right: 16px;
+}

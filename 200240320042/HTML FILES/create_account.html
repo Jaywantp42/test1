@@ -1,0 +1,107 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>create account</title>
+		<style>
+			body{
+				margin: 0px;
+				padding: 0px;
+				background: #b3b3b3;
+				font-family: calibri;
+			}
+			h2{
+				margin-top: 30;
+				color: #36454f;
+				font-size: 28px;
+				text-align: center;
+			}
+			.loginbox{
+				width: 420px;
+				height: 580px;
+				background: #fffdd0;
+				color: gray;
+				left: 34%;
+				position: absolute;
+				transform:translate(-50% -50%);
+				box-sizing: border-box;
+				padding: 100px 30px;
+			}
+			.Haagen-Dazs_Logo{
+				width: 150px;
+				height: 150px;
+				border-radius: 55%;
+				position: absolute;
+				float: center;
+				top: 15;
+				left: 30%;
+			}
+			.loginbox p{
+				margin:2px;
+				padding:2px;
+				font-size: 16px;
+			}
+			.loginbox input[type="text"],input[type="password"]{
+				border: 1px solid gray;
+				background: transparent;
+				outline: none;
+				height: 35px;
+				color: black;
+				font-size: 16px;
+			}
+			.loginbox input[type="submit"]{
+				border: none;
+				height: 35px;
+				background: #d1001c;
+				color: #ffffff;
+				font-size: 18px;
+				border-radius: 20px;
+			}
+			.loginbox a{
+				font-size: 20px;
+				line-height: 20px;
+				color: #fd6a02;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Sign Up with Häagen-Dazs</h2>
+		<div class="loginbox">
+			<img src="images\Login page\logo.jpg" class="Haagen-Dazs_Logo" /><br><br><br><br>
+			<form name="Loginform" method="post" action="h1.html">
+				<table>
+					<tr>
+						<td><input type="text" size="25" placeholder="Email"></td>
+					</tr>
+					<tr>	
+						<td><input type="text" size="25" placeholder="First name"></td>
+					</tr>
+					<tr>	
+						<td><input type="text" size="25" placeholder="Last name"></td>
+					</tr>
+					<tr>	
+						<td><input type="text" size=25 placeholder="phone number"></td>
+					</tr>
+					<tr>
+						<td><input type="password" size="25" placeholder="password"></td>
+					</tr>
+				</table>
+			</form>	
+		<p>Password must contain atleast 8 characters</p>
+		<form name="Loginform" method="post" action="h1.html">
+			<table>
+				<tr>
+					<td><input type="password" size="25" placeholder="confirm password"></td>
+				<tr>
+			</table>
+		</form>	
+		<p>I agree to the Häagen-Dazs <a href="#">terms and conditions</a></p>
+		<form name="Loginform" method="post" action="h1.html">
+			<table>
+				<tr>
+					<td><input type="submit" value="Register"></td>
+				<tr>
+			</table>
+		</form>		
+		</div>
+	</body>
+</html>

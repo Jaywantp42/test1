@@ -1,0 +1,93 @@
+<! DOCTYPE html>
+<html>
+	<head>
+		<title>Login form</title>
+		<style>
+			body{
+				margin: 30px;
+				padding: 10px;
+				background: url(icecream.jpg);
+				background-size: cover;
+				background-position: center;
+				font-family: calibri;
+			}
+			.loginbox{
+				width: 450px;
+				height: 520px;
+				background: #f3e5ab;
+				color: gray;
+				left: 64%;
+				position: absolute;
+				transform:translate(-50% -50%);
+				box-sizing: border-box;
+				padding: 100px 30px;
+			}
+			.Haagen-Dazs_Logo{
+				width: 150px;
+				height: 94px;
+				border-radius: 55%;
+				position: absolute;
+				float: center;
+				top: 0;
+				left: 30%;
+			}
+			.loginbox input{
+				width: 100%;
+				margin-bottom: 8px;
+			}
+			h3{
+				margin: 0;
+				padding: 0 0 10px;
+				text-align: center;
+				font-size: 20px;
+				color: #36454f;
+			}
+			.loginbox p{
+				margin:2px;
+				padding:2px;
+				font-weight:bold;
+			}
+			.loginbox input[type="text"],input[type="password"]{
+				border: 1px solid #fff;
+				background: transparent;
+				outline: none;
+				height: 35px;
+				color: black;
+				font-size: 16px;
+			}
+			.loginbox input[type="submit"], input[type="button"]{
+				border: none;
+				height: 35px;
+				background: #d1001c;
+				color: #ffffff;
+				font-size: 18px;
+				border-radius: 20px;
+			}
+			.loginbox a{
+				font-size: 20px;
+				line-height: 22px;
+				color: #fd6a02;
+				line-align: center;
+			}			
+				
+			
+		</style>
+	</head>
+	<body>
+		<div class="loginbox">
+		<h3>Sign in to continue to Häagen-Dazs</h3>
+		<a href="navigation_bar + homepage.html"><img src="images\Login page\Haagen-Dazs_Logo.png" class="Haagen-Dazs_Logo"></a>
+			<form>
+			<p>Username</p>
+			<input type="text" size="25" placeholder="Enter username">
+			<p>Password</p>
+			<input type="password" size="25" placeholder="Enter password"><br><br>
+			<input type="submit" value="Login"><br><br><a href="forgot_password.html">Forgot Password?</a>
+			<p>or</p>
+			<input type="button" onclick="window.location.href='https://www.facebook.com';" value="Sign in with Facebook">
+			<p></p>
+			<a href="create_account.html" target="_blank" />Create an account</a>
+			</form>
+		</div>
+	</body>
+</html>
